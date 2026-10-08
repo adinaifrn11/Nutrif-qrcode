@@ -3,39 +3,84 @@ body{
     color:white;
     padding-left:40px;
     padding-right:40px;
+    height:917px;
+    width: 412px;
+
 }
+
+#inicio{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin:0;
+}
+
 
 #login{
     background-color:white;
     color:black;
-    height:600px;
-    width: 500px;
+    height:601px;
+    width: 346px;
     border-radius: 20px;
     display: flex;
     align-items:center;
     flex-direction: column; 
+    gap: 50px;
     min-height: 100vh;   
     width: 100%; 
 
 }
 
+#login p{
+    margin-top: auto;
+    margin-bottom: 80px;
+}
+
 .input{
+    display:flex;
     border: solid 1px;
-    width: 400px;
-    height:100px;
+    width: 281px;
+    height:56px;
     align-items:center;
     padding-left: 20px;
     border-radius:20px;
+    flex-direction: row;
+    gap:15px;
+
+}
+
+.input input{
+    border: none;
+    outline: none;
 }
 
 .entrar{
     display:flex;
     background-color:#165B3C; 
     border-radius:20px;
-    width: 400px;
-    height:100px; 
+    width: 290px;
+    height:56px; 
     align-items:center;
     justify-content: center;
+    
+}
+
+.entrar a{
+    text-decoration: none;
     color:white;
     
+}
+
+.BemVindo{
+    padding-top: 50px;
+
+}
+
+.BemVindo, h2{
+    margin-bottom: 0;
+    
+}
+
+.BemVindo, p{
+    margin-top: 0;
 }
