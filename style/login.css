@@ -1,0 +1,41 @@
+body{
+    background-color:#165B3C;
+    color:white;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+#login{
+    background-color:white;
+    color:black;
+    height:600px;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    align-items:center;
+    flex-direction: column; 
+    min-height: 100vh;   
+    width: 100%; 
+
+}
+
+.input{
+    border: solid 1px;
+    width: 400px;
+    height:100px;
+    align-items:center;
+    padding-left: 20px;
+    border-radius:20px;
+}
+
+.entrar{
+    display:flex;
+    background-color:#165B3C; 
+    border-radius:20px;
+    width: 400px;
+    height:100px; 
+    align-items:center;
+    justify-content: center;
+    color:white;
+    
+}
