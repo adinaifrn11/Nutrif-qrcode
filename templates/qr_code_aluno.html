@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu qr code</title>
+
+    <!-- fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style/qr_code_aluno.css">
+</head>
+<body>
+    <header>
+        <section>
+            <div id="logo">
+                <img>
+                <p>NUTRIF</p>
+            </div>
+
+            <div id="perfil">
+                <img src="../images/perfil.png" alt="perfil">
+                <a href="perfil_aluno.html">Nome do usuário</a>
+                <img id="aba" src="../images/aba.png" alt="aba perfil">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div id="voltar">
+            <img src="../images/seta_esquerda.png" alt="seta voltar">
+            <a href="dashboard.html">Voltar</a>
+        </div>
+
+        <section>
+
+            <div id="instrucoes">
+                <h1>Meu QR Code</h1>
+                <p>Apresente este código para validação de sua refeição</p>
+            </div>
+            
+
+            <!--<qrcode>-->
+
+            <div id="qrcode">
+                <img src="../images/qr.png" alt="QR Code">
+            </div>    
+            
+            <div id="informacoes">
+                <h2>nome de usuário</h2>
+                <p>Matrícula: 20231041110029</p>
+            </div>
+            
+
+            <div id="aviso">
+                <div id="exclamacao">
+                    <img src="../images/exclamacao.png" alt="exclamação">
+                </div>
+                <p>O QR code é individual e deve ser apresentado a cada refeição</p>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

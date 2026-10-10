@@ -1,0 +1,125 @@
+body{
+    font-family: 'Inter', sans-serif;
+    width: 412px;
+    height: 917px; 
+}
+
+/*HEADER*/
+   
+
+/*header cima*/
+
+header{
+    background-color:#165B3C;
+    color:white;
+
+    position: fixed;   
+    top: 0;            
+    left: 0;           
+    width: 412px;  
+    height: 118px;     
+    z-index: 1000; 
+    
+}
+
+header section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    padding-top:0px;
+    padding-bottom:8px;
+}
+
+#perfil{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items:center;
+}
+
+#perfil #aba{
+    filter: brightness(0) invert(1);
+    width:15px;
+    height:6px;
+
+}
+
+#perfil img{
+    width:31px;
+    height:31px;
+}
+
+#perfil a{
+    text-decoration:none;
+    color:white;
+}
+
+/**/ 
+
+header nav{
+    display:flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+    
+}
+
+header nav a{
+    text-decoration:none;
+    color:white;
+}
+
+/**/
+
+main{
+    margin-top:150px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+
+/*container*/
+
+.container{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 346px;
+    height: 73px;
+    padding:20px;
+    margin-bottom: 25px;
+    
+}
+
+#data{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.check{
+    background-color:#175C3C;
+    width:42px;
+    height:40px;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.informacoes-container{
+    display:flex;
+    flex-direction: column;
+}
+
+.hora-seta{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items:center;
+}
+
