@@ -1,34 +1,39 @@
-body{
+body {
     font-family: 'Inter', sans-serif;
-    width: 412px;
-    height: 917px; 
+    width: 100%;
+    max-width: 412px;
+    min-height: 100vh;
+    margin: 0 auto;
 }
 
-header{
-    background-color:#165B3C;
-    color:white;
+header {
+    background-color: #165B3C;
+    color: white;
 
     position: fixed;   
     top: 0;            
     left: 0;           
+    right: 0;
     width: 100%;       
+    max-width: 412px;
+    margin: 0 auto;
     z-index: 1000; 
-    height:118px;
+    height: 118px;
 }
 
-header section{
-    display:flex;
+header section {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 30px;
-    padding-top:0px;
-    padding-bottom:8px;
+    padding-top: 0px;
+    padding-bottom: 8px;
 }
 
-p{
+p {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 /*main*/
@@ -38,41 +43,44 @@ main {
     display: flex; 
     justify-content: center;
     align-items: center;
-    gap:52px; 
+    gap: 52px; 
     flex-direction: column; 
+    padding: 0 20px;
 }
 
-main h1{
+main h1 {
     font-size: 24px;
 }
 
-#container{
+#container {
     background-color: #ffff;
     border-radius: 10px;
-    border:solid 1px;
-    width: 334px;
+    border: solid 1px;
+    width: 100%;
+    max-width: 334px;
     height: 65px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding:10px;
+    padding: 10px;
 }
 
-#status{
+#status {
     background-color: #95D5B2;
     border-radius: 10px;
-    border:solid 1px;
-    width: 153px;
+    border: solid 1px;
+    width: 100%;
+    max-width: 153px;
     height: 28px;
     align-items: center;
     justify-content: center;
-    display:flex;
+    display: flex;
     margin-top: 20px;
-    font-size:14px;
+    font-size: 14px;
 }
 
-#check{
+#check {
     border-radius: 50px;
     background-color: #165B3C;
     width: 42px;
@@ -81,19 +89,19 @@ main h1{
     align-items: center;
     justify-content: center;
     margin-right: 8px;
+    flex-shrink: 0;
 }
 
-#informacoes{
-   font-size: 16px;
+#informacoes {
+    font-size: 16px;
 }
 
-#negrito{
+#negrito {
     font-weight: bold;
     margin: 0;
-    
 }
 
-#cinza{
+#cinza {
     color: grey;
     margin: 0;
 }

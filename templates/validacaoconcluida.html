@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refeição Validada - Nutrif</title>
+    <link rel="stylesheet" href="../style/validacaoconcluida.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <section class="header-container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Nutrif Logo">
+            </div>
+            <div id="perfil">
+                <div class="avatar"></div>
+                <span>Maria</span>
+                <span class="seta">&#10095;</span>
+            </div>
+        </section>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container-sucesso">
+        <!-- Ícone Check de Sucesso -->
+        <div class="icone-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        </div>
+
+        <h1 class="titulo-sucesso">Refeição validada!</h1>
+        <p class="subtitulo">Lanche da manhã</p>
+
+        <!-- Informações de Data e Hora -->
+        <div class="info-data-hora">
+            <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>25/09/2026</span>
+            </div>
+
+            <div class="info-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>08:22</span>
+            </div>
+        </div>
+
+        <!-- Banner de Confirmação -->
+        <div class="box-mensagem">
+            <p>Sua refeição foi registrada com sucesso</p>
+        </div>
+
+        <!-- Botão Voltar ao início -->
+        <button class="btn-inicio" onclick="location.href='dashboard.html'">Voltar ao inicio</button>
+    </main>
+
+</body>
+</html>

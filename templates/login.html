@@ -1,48 +1,69 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Refeição Validada</title>
 
-    <!-- fonte-->
+    <!-- fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../style/login.css">
 </head>
 <body>
 
-    <div id="inicio">
-        <img>
-        <h1>NUTRIF</h1>
-        <p>alimentação escolar de forma simples e segura.</p>
-        
+    <div id="cabecalho">
+
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo NUTRIF">
+            <h1>NUTRIF</h1>
+        </div>
+
+        <div class="usuario">
+            <div class="foto-usuario"></div>
+            <p>Maria</p>
+            <span>⌄</span>
+        </div>
+
     </div>
 
-    <div id="login">
- 
-        <div class="BemVindo">
-            <h2>Bem-vindo(a)!</h2>
-            <p>Acesse sua conta para utilizar o sistema NUTRIF</p>
+    <div id="validacao">
+
+        <div class="sucesso">
+            <img src="../images/check.svg" alt="Confirmação de sucesso">
         </div>
 
-        <div class="input">
-            <img src="../images/matricula.svg" alt="icone matricula">
-            <input type="text" placeholder="Matricula">
+        <div class="titulo">
+            <h2>Refeição validada!</h2>
+            <p>Lanche da manhã</p>
         </div>
 
-        <div class="input">
-            <img src="../images/senha.svg" alt="icone senha">
-            <input type="password" placeholder="Senha">
+        <div class="informacoes">
+
+            <div class="data">
+                <img src="../images/calendario.svg" alt="Calendário">
+                <p>25/09/2026</p>
+            </div>
+
+            <div class="horario">
+                <img src="../images/relogio.svg" alt="Relógio">
+                <p>08:22</p>
+            </div>
+
         </div>
 
-        <div class="entrar">
-            <a href="dashboard.html">ENTRAR</a>
+        <div class="mensagem">
+            <p>Sua refeição foi registrada com sucesso</p>
         </div>
 
-        <p>Acesso exclusivo para estudantes.</p>
+        <div class="voltar">
+            <a href="dashboard.html">Voltar ao início</a>
+        </div>
+
     </div>
+
 </body>
 </html>

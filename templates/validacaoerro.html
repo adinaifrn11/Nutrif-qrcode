@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação Erro - Nutrif</title>
+    <link rel="stylesheet" href="../style/validacaoerro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <section class="header-container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Nutrif Logo">
+            </div>
+            <div id="perfil">
+                <div class="avatar"></div>
+                <span>Maria</span>
+                <span class="seta">&#10095;</span>
+            </div>
+        </section>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container-alerta">
+        <!-- Ícone de Alerta em SVG -->
+        <div class="icone-alerta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+        </div>
+
+        <h1 class="titulo-alerta">Refeição já validada</h1>
+
+        <div class="mensagem-alerta">
+            <p>Você já utilizou o lanche da manhã neste período</p>
+            <p>Uma nova validação não está disponível</p>
+        </div>
+
+        <button class="btn-voltar" onclick="history.back()">Voltar</button>
+    </main>
+
+</body>
+</html>
