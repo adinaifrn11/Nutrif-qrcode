@@ -33,8 +33,9 @@ with app.app_context():
         db.session.commit()
 
     # Gera o QR Code com o token individual
-    imagem = qrcode.make(aluno.token_qr)
-    imagem.save("static/img/qr_aluno.png")
+    print("=================================")
+    print("TOKEN DO ALUNO:", aluno.token_qr)
+    print("=================================")
 
 
 # ====================== ROTAS DAS PÁGINAS ======================
