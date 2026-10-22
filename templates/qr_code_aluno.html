@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../style/qr_code_aluno.css">
+    <link rel="stylesheet" href="../static/style/qr_code_aluno.css">
 </head>
 <body>
     <header>
@@ -45,7 +45,11 @@
             <!--<qrcode>-->
 
             <div id="qrcode">
-                <img src="../images/qr.png" alt="QR Code">
+                <img
+                    src="{{ url_for('static', filename='img/qr_aluno.png') }}"
+                    alt="QR Code do aluno"
+                    width="250"
+                >
             </div>    
             
             <div id="informacoes">
