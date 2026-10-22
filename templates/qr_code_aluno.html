@@ -1,71 +1,143 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu qr code</title>
 
-    <!-- fonte-->
+    <title>Meu QR Code - NUTRIF</title>
+
+    <!-- Fonte Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../static/style/qr_code_aluno.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS da página -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style/qr_code_aluno.css') }}"
+    >
 </head>
+
 <body>
+
+    <!-- Cabeçalho -->
     <header>
         <section>
+
             <div id="logo">
-                <img>
+                <!-- Substitua pelo caminho da sua logo, se necessário -->
+                <img
+                    src="{{ url_for('static', filename='img/logo.png') }}"
+                    alt="Logo NUTRIF"
+                >
                 <p>NUTRIF</p>
             </div>
 
             <div id="perfil">
-                <img src="../images/perfil.png" alt="perfil">
-                <a href="perfil_aluno.html">Nome do usuário</a>
-                <img id="aba" src="../images/aba.png" alt="aba perfil">
+                <img
+                    src="{{ url_for('static', filename='img/perfil.png') }}"
+                    alt="Foto de perfil"
+                >
+
+                <a href="{{ url_for('perfil') }}">
+                    {{ aluno.nome }}
+                </a>
+
+                <img
+                    id="aba"
+                    src="{{ url_for('static', filename='img/aba.png') }}"
+                    alt="Aba do perfil"
+                >
             </div>
+
         </section>
     </header>
 
+
+    <!-- Conteúdo principal -->
     <main>
+
+        <!-- Botão voltar -->
         <div id="voltar">
-            <img src="../images/seta_esquerda.png" alt="seta voltar">
-            <a href="dashboard.html">Voltar</a>
+
+            <img
+                src="{{ url_for('static', filename='img/seta_esquerda.png') }}"
+                alt="Seta para voltar"
+            >
+
+            <a href="{{ url_for('perfil') }}">Voltar</a>
+
         </div>
+
 
         <section>
 
+            <!-- Instruções -->
             <div id="instrucoes">
                 <h1>Meu QR Code</h1>
-                <p>Apresente este código para validação de sua refeição</p>
+
+                <p>
+                    Apresente este código para validação de sua refeição.
+                </p>
             </div>
-            
 
-            <!--<qrcode>-->
 
+            <!-- QR Code individual do aluno -->
             <div id="qrcode">
+
                 <img
                     src="{{ url_for('static', filename='img/qr_aluno.png') }}"
-                    alt="QR Code do aluno"
+                    alt="QR Code individual do aluno"
                     width="250"
                 >
-            </div>    
-            
-            <div id="informacoes">
-                <h2>nome de usuário</h2>
-                <p>Matrícula: 20231041110029</p>
-            </div>
-            
 
-            <div id="aviso">
-                <div id="exclamacao">
-                    <img src="../images/exclamacao.png" alt="exclamação">
-                </div>
-                <p>O QR code é individual e deve ser apresentado a cada refeição</p>
             </div>
+
+
+            <!-- Informações do aluno vindas do banco -->
+            <div id="informacoes">
+
+                <h2>{{ aluno.nome }}</h2>
+
+                <p>
+                    Matrícula: {{ aluno.matricula }}
+                </p>
+
+                {% if aluno.curso %}
+                    <p>Curso: {{ aluno.curso }}</p>
+                {% endif %}
+
+            </div>
+
+
+            <!-- Aviso -->
+            <div id="aviso">
+
+                <div id="exclamacao">
+
+                    <img
+                        src="{{ url_for('static', filename='img/exclamacao.png') }}"
+                        alt="Atenção"
+                    >
+
+                </div>
+
+                <p>
+                    O QR Code é individual e deve ser apresentado
+                    a cada refeição.
+                </p>
+
+            </div>
+
         </section>
 
     </main>
+
 </body>
 </html>
+```
