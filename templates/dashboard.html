@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Home</title>
 
-    <!-- fonte-->
+    <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../style/dashboard.css">
+    <link rel="stylesheet" href="../static/style/dashboard.css">
 </head>
 <body>
-    <header>
 
+    <header>
         <section>
             <div id="logo">
-                 <img src="../images/logo.png" alt="Nutrif Logo"><img>
+                <img src="../static/images/logo.png" alt="Nutrif Logo">
                 <p>NUTRIF</p>
             </div>
 
             <div id="perfil">
-                <img src="../images/perfil.png" alt="perfil">
-                <a href="perfil_aluno.html">Nome do usuário</a>
-                <img id="aba" src="../images/aba.png" alt="aba perfil">
+                <img src="../static/images/perfil.png" alt="Perfil">
+                <a href="{{ url_for('perfil') }}">Nome do usuário</a>
+                <img id="aba" src="../static/images/aba.png" alt="Aba perfil">
             </div>
         </section>
-        
+
         <nav>
-            <a href="dashboard.html">Início</a>
-            <a href="refeicoes.html">Refeições</a>
-            <a href="historico.html">Histórico</a>
+            <a href="{{ url_for('dashboard') }}">Início</a>
+            <a href="{{ url_for('historico') }}">Refeições</a>
+            <a href="{{ url_for('historico') }}">Histórico</a>
         </nav>
     </header>
 
@@ -42,42 +42,40 @@
         </div>
 
         <div class="validar">
-            <img src="../images/lanche_manha.png" alt="Lanche da manhã">
+            <img src="../static/images/lanche_manha.png" alt="Lanche da manhã">
             <div>
                 <h3>Lanche da manhã</h3>
-                <div id="disponivel"><p>Disponível</p></div>
+                <div class="disponivel"><p>Disponível</p></div>
             </div>
-
-            <div id="botao-validar">
-                <a href="qr_code_aluno.html">Validar</a>
-            </div>
-        </div>
-
-        <div class="validar">
-            <img src="../images/lanche_tarde.png" alt="Lanche da tarde">
-            <div>
-                <h3>Lanche da Tarde</h3>
-                <div id="disponivel"><p>Disponível</p></div>
-            </div>
-
-            <div id="botao-validar">
-                <a href="qr_code_aluno.html">Validar</a>
+            <div class="botao-validar">
+                <a href="{{ url_for('mostrar_qr') }}">Validar</a>
             </div>
         </div>
 
         <div class="validar">
-            <img src="../images/lanche_noite.png" alt="Lanche da noite">
+            <img src="../static/images/lanche_tarde.png" alt="Lanche da tarde">
             <div>
-                <h3>Lanche da Noite</h3>
-                <div id="disponivel"><p>Disponível</p></div>
+                <h3>Lanche da tarde</h3>
+                <div class="disponivel"><p>Disponível</p></div>
             </div>
+            <div class="botao-validar">
+                <a href="{{ url_for('mostrar_qr') }}">Validar</a>
+            </div>
+        </div>
 
-            <div id="botao-validar">
-                <a href="qr_code_aluno.html">Validar</a>
+        <div class="validar">
+            <img src="../static/images/lanche_noite.png" alt="Lanche da noite">
+            <div>
+                <h3>Lanche da noite</h3>
+                <div class="disponivel"><p>Disponível</p></div>
+            </div>
+            <div class="botao-validar">
+                <a href="{{ url_for('mostrar_qr') }}">Validar</a>
             </div>
         </div>
     </main>
 
     <footer></footer>
+
 </body>
 </html>

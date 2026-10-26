@@ -45,18 +45,22 @@
 
         <div class="cartao-detalhes">
             <div class="item-detalhe">
-                <img src="../images/usuario-icon.svg" alt="Ícone Matrícula">
+                <img src="../static/images/matricula.svg" alt="Ícone Matrícula">
                 <p>Matricula : <span>20231041110034</span></p>
             </div>
             <div class="item-detalhe">
-                <img src="../images/email-icon.svg" alt="Ícone Email">
+                <img src="../static/images/matricula.svg" alt="Ícone Email">
                 <p>E-mail: <span>maria@escolar.edu.br</span></p>
             </div>
         </div>
 
         <div class="cartao-qrcode">
             <div class="imagem-qrcode">
-                <img src="../images/qrcode.png" alt="Meu QR Code">
+                <img
+                    src="{{ url_for('static', filename='img/qr_aluno.png') }}"
+                    alt="QR Code individual do aluno"
+                    width="250"
+                >
             </div>
             <div class="texto-qrcode">
                 <h4>Meu QR code</h4>
@@ -65,10 +69,8 @@
         </div>
 
         <div class="botao-sair">
-            <a href="login.html">
-                <img src="../images/sair-icon.svg" alt="Ícone Sair">
-                Sair
-            </a>
+            <a href="{{ url_for('inicio') }}">Sair</a>
+            <img src="../static/images/sair-icon.svg" alt="Ícone Sair">
         </div>
 
     </div>

@@ -50,7 +50,6 @@ def dashboard():
     aluno = Aluno.query.filter_by(matricula="ALUNO-001").first()
     return render_template("dashboard.html", aluno=aluno)
 
-
 @app.route("/perfil")
 def perfil():
     aluno = Aluno.query.filter_by(matricula="ALUNO-001").first()

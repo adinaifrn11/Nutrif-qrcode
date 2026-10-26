@@ -1,129 +1,189 @@
-body{
-    font-family: 'Inter', sans-serif; 
-    width: 412px;
-    height: 917px;
-    
+
+* {
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header {
+    background-color: #165B3C;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125px;
+    z-index: 1000;
+}
+
+/* Parte superior do header */
+
+header section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    height: 75px;
+}
+
+/* Logo */
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+#logo img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+#logo p {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Perfil */
+
+#perfil {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+#perfil img {
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+}
+
+#perfil #aba {
+    filter: brightness(0) invert(1);
+    width: 15px;
+    height: 6px;
+}
+
+#perfil a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+/* Menu de navegação */
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    background-color: #165B3C;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 12px;
+    white-space: nowrap;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* CONTEÚDO PRINCIPAL */
 
 main {
     margin-top: 150px;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:52px;
+    gap: 30px;
+    padding: 0 16px 30px;
 }
 
-.validar{
-    display:flex;
+main h2 {
+    font-size: 20px;
+}
+
+main > div:first-child {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Cartões das refeições */
+
+.validar {
+    display: flex;
     flex-direction: row;
-    align-items:center;
-    width:330px;
-    height:80px;
-    border:solid 1px;
-    border-radius:10px;
+    align-items: center;
     justify-content: space-between;
-    padding:30px;
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-
-}
-
-.validar img{
-    width:50px;
-    height:50px;
-}
-
-#botao-validar{
-    background-color:#165B3C;
-    width: 96px;
-    height: 38px;
-    border-radius:10px;
-    display:flex;
-    align-items:center;
-    justify-content: center;
-
-}
-
-#botao-validar a{
-    text-decoration:none;
-    color:white;
-}
-
-#disponivel{
-    background-color:#E2F8E3;
-    height: 22px;
-    width: 101px;
-    border-radius:10px;
-    display:flex;
-    align-items:center;
-    justify-content: center;
-}
-
-/*HEADER*/
-   
-
-/*header cima*/
-
-header{
-    background-color:#165B3C;
-    color:white;
-
-    position: fixed;   
-    top: 0;            
-    left: 0;           
-    width: 412px;  
-    height: 118px;     
-    z-index: 1000; 
-    
-}
-
-header section{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px;
-    padding-top:0px;
-    padding-bottom:8px;
-}
-
-#perfil{
-    display:flex;
-    flex-direction: row;
     gap: 10px;
-    align-items:center;
+    width: 100%;
+    max-width: 350px;
+    min-height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
-#perfil #aba{
-    filter: brightness(0) invert(1);
-    width:15px;
-    height:6px;
-
+.validar img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
 }
 
-#perfil img{
-    width:31px;
-    height:31px;
+.validar h3 {
+    font-size: 14px;
 }
 
-#perfil a{
-    text-decoration:none;
-    color:white;
-}
-
-/**/ 
-
-header nav{
-    display:flex;
-    flex-direction: row;
-    gap: 80px;
+.botao-validar {
+    background-color: #165B3C;
+    min-width: 70px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    
 }
 
-header nav a{
-    text-decoration:none;
-    color:white;
+.botao-validar a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
 }
 
+.disponivel {
+    background-color: #E2F8E3;
+    height: 22px;
+    width: 90px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/*fim header*/
+.disponivel p {
+    font-size: 12px;
+}

@@ -10,28 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../style/historico.css">
+    <link rel="stylesheet" href="../static/style/historico.css">
 </head>
 <body>
      <header>
 
         <section>
             <div id="logo">
-                 <img src="../images/logo.png" alt="Nutrif Logo">
+                 <img src="../static/images/logo.png" alt="Nutrif Logo">
                 <p>NUTRIF</p>
             </div>
 
             <div id="perfil">
-                <img src="../images/perfil.png" alt="perfil">
-               <a href="perfil_aluno.html">Nome do usuário</a>
-                <img id="aba" src="../images/aba.png" alt="aba perfil">
+                <img src="../static/images/perfil.png" alt="perfil">
+                <a href="{{ url_for('perfil') }}">Nome do usuário</a>
+                <img id="aba" src="../static/images/aba.png" alt="aba perfil">
             </div>
         </section>
         
         <nav>
-            <a href="dashboard.html">Início</a>
-            <a href="refeicoes.html">Refeições</a>
-            <a href="historico.html">Histórico</a>
+            <a href="{{ url_for('dashboard') }}">Início</a>
+            <a href="{{ url_for('historico') }}">Refeições</a>
+            <a href="{{ url_for('historico') }}">Histórico</a>
         </nav>
     </header>
 
@@ -48,7 +48,7 @@
             <div class="container">
 
                 <div class="check">
-                    <img src="../images/Check.png" alt="check">
+                    <img src="../static/images/Check.png" alt="check">
                 </div>
 
                 <div class="informacoes-container">
@@ -58,14 +58,14 @@
 
                 <div class="hora-seta">
                     <p>10:30</p>
-                    <img src="../images/seta_direita.png" alt="seta">
+                    <img src="../static/images/seta_direita.png" alt="seta">
                 </div>
             </div>
 
             <div class="container">
 
                 <div class="check">
-                    <img src="../images/Check.png" alt="check">
+                    <img src="../static/images/Check.png" alt="check">
                 </div>
 
                 <div class="informacoes-container">
@@ -75,7 +75,7 @@
 
                 <div class="hora-seta">
                     <p>10:30</p>
-                    <img src="../images/seta_direita.png" alt="seta">
+                    <img src="../static/images/seta_direita.png" alt="seta">
                 </div>
             </div>
         </section>
@@ -89,7 +89,7 @@
             <div class="container">
 
                 <div class="check">
-                    <img src="../images/Check.png" alt="check">
+                    <img src="../static/images/Check.png" alt="check">
                 </div>
 
                 <div class="informacoes-container">
@@ -99,14 +99,14 @@
 
                 <div class="hora-seta">
                     <p>10:30</p>
-                    <img src="../images/seta_direita.png" alt="seta">
+                    <img src="../static/images/seta_direita.png" alt="seta">
                 </div>
             </div>
 
             <div class="container">
 
                 <div class="check">
-                    <img src="../images/Check.png" alt="check">
+                    <img src="../static/images/Check.png" alt="check">
                 </div>
 
                 <div class="informacoes-container">
@@ -116,7 +116,7 @@
 
                 <div class="hora-seta">
                     <p>10:30</p>
-                    <img src="../images/seta_direita.png" alt="seta">
+                    <img src="../static/images/seta_direita.png" alt="seta">
                 </div>
             </div>
         
