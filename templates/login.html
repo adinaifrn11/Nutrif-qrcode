@@ -1,68 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refeição Validada</title>
-
-    <!-- fonte -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <title>NUTRIF</title>
     <link rel="stylesheet" href="../static/style/login.css">
 </head>
 <body>
 
-    <div id="cabecalho">
-
-        <div class="logo">
-            <img src="../static/images/logo.png" alt="Logo NUTRIF">
-            <h1>NUTRIF</h1>
-        </div>
-
-        <div class="usuario">
-            <div class="foto-usuario"></div>
-            <a href="../templates/perfil.html" >Maria</a>
-            <span>⌄</span>
-        </div>
-
-    </div>
-
-    <div id="validacao">
-
-        <div class="sucesso">
-            <img src="../static/images/check.svg" alt="Confirmação de sucesso">
-        </div>
-
-        <div class="titulo">
-            <h2>Refeição validada!</h2>
-            <p>Lanche da manhã</p>
-        </div>
-
-        <div class="informacoes">
-
-            <div class="data">
-                <img src="../static/images/calendario.svg" alt="Calendário">
-                <p>25/09/2026</p>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="../static/images/logo.png" alt="NUTRIF">
+                <h1>NUTRIF</h1>
+                <p>Alimentação escolar de forma simples e segura.</p>
             </div>
+        </header>
 
-            <div class="horario">
-                <img src="../images/relogio.svg" alt="Relógio">
-                <p>08:22</p>
-            </div>
+        <main class="login-card">
+            <div class="info">
+                <h2>Bem-vindo(a)!</h2>
+                <p>Acesse sua conta para utilizar o sistema NUTRIF</p>
 
-        </div>
+            </div>  
 
-        <div class="mensagem">
-            <p>Sua refeição foi registrada com sucesso</p>
-        </div>
+            <form>
+                <div class="campo">
+                    <input type="text" placeholder="Matrícula" required>
+                </div>
 
-        <div class="voltar">
-            <a href="dashboard.html">Voltar ao início</a>
-        </div>
+                <div class="campo">
+                    <input type="password" placeholder="Senha" required>
+                </div>
 
+                <button type="submit">ENTRAR</button>
+            </form>
+
+            <p>Acesso exclusivo para estudantes.</p>
+        </main>
     </div>
 
 </body>
